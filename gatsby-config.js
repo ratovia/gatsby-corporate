@@ -45,10 +45,12 @@ module.exports = {
           },
           {
             statement: 'SELECT * FROM notifications',
+            idFieldName: 'id',
             name: 'notifications'
           },
           {
             statement: 'SELECT * FROM recruits',
+            idFieldName: 'id',
             name: 'recruits'
           }
         ]

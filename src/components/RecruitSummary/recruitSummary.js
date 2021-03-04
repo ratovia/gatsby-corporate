@@ -13,7 +13,7 @@ const RecruitSummary = () => {
           <div className="btn more-btn">more</div>
         </div>
         <div className="float-box">
-          <img className="float-box__image" src="https://source.unsplash.com/collection/175083/640x360"></img>
+          <img className="float-box__image" alt="採用情報に関する画像"src="https://source.unsplash.com/collection/175083/640x360"></img>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ const ServiceSummary = () => {
       </div>
       <div className="service-summary-area__list">
         <ul className="service-items">
-        <a>
+          <a>
             <li className="service-item">
               <img className="service-item__image" src="https://source.unsplash.com/collection/175083/640x360"></img>
               <div className="service-item__text">
