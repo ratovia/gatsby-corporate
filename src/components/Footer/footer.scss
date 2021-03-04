@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  background-color: rgb(78, 91, 113);
+  padding: 30px;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    li {
+      list-style: none;
+      a {
+        color: white;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+      a + ul {
+        margin-top: 10px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          list-style: none;
+          padding: 3px 10px;
+          a {
+            color: white;
+            font-size: 12px;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
