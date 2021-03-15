@@ -12,13 +12,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
-        accessToken: process.env.GATSBY_CONTENTFUL_API_KEY
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+    //     accessToken: process.env.GATSBY_CONTENTFUL_API_KEY
+    //   }
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -33,9 +33,11 @@ module.exports = {
       resolve: `gatsby-source-mysql`,
       options: {
         connectionDetails: {
-          host: process.env.GATSBY_DB_HOST,
-          user: process.env.GATSBY_DB_USER,
-          database: process.env.GATSBY_DB_DATABASE
+          database: process.env.SAFARIPARK_DATABASE_NAME,
+          user: process.env.SAFARIPARK_DATABASE_USERNAME,
+          password: process.env.SAFARIPARK_DATABASE_PASSWORD,
+          socketPath: process.env.SAFARIPARK_DATABASE_SOCKET,
+          host: process.env.SAFARIPARK_DATABASE_HOST,
         },
         queries: [
           {
