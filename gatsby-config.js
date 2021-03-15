@@ -36,7 +36,6 @@ module.exports = {
           database: process.env.SAFARIPARK_DATABASE_NAME,
           user: process.env.SAFARIPARK_DATABASE_USERNAME,
           password: process.env.SAFARIPARK_DATABASE_PASSWORD,
-          socketPath: process.env.SAFARIPARK_DATABASE_SOCKET,
           host: process.env.SAFARIPARK_DATABASE_HOST,
         },
         queries: [
