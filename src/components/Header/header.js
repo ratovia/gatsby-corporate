@@ -3,8 +3,8 @@ import "./header.scss";
 import LogoWhite from "../../../static/logo-white.svg"
 import LogoBlue from "../../../static/logo-blue.svg"
 
-const Header = () => {
-
+const Header = (prop) => {
+  const [isScrollEffect, setIsScrollEffect] = useState(prop.isScrollEffect)
   const [scroll, setScroll] = useState(0);
   const [logoImageUrl, setLogoImageUrl] = useState(LogoWhite);
   const [headerColor, setHeaderColor] = useState("white")
@@ -22,10 +22,16 @@ const Header = () => {
         setLogoImageUrl(LogoWhite)
       }
     };
-    document.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      document.removeEventListener('scroll', handleScroll);
-    };
+    if(isScrollEffect) {
+      document.addEventListener('scroll', handleScroll, { passive: true });
+      return () => {
+        document.removeEventListener('scroll', handleScroll);
+      };
+    } else {
+      setHeaderColor("black")
+      setHeaderBGColor("#ffffff")
+      setLogoImageUrl(LogoBlue) 
+    }
   }, [scroll]);
 
   return (

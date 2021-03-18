@@ -1,0 +1,26 @@
+#page-hero {
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+    transform: scaleY(1.5)
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    min-height: 0px;
+    height: 200px;
+    .hero-image-area {
+      background-size: cover;
+      &__image {
+        height: 200px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}

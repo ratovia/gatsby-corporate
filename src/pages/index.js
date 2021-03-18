@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/index.scss"
 import Layout from "../components/Layout/layout"
+import Header from "../components/Header/header"
 import Hero from "../components/Hero/hero"
 import News from "../components/News/news"
 import SEO from "../components/Seo/seo"
@@ -13,6 +14,7 @@ export default function Home({data}) {
   return (
     <Layout>
       <SEO title="" description="" />
+      <Header isScrollEffect={true}/>
       <Hero />
       <News news={data.allMysqlNotifications.edges}/>
       <CompanySummary />

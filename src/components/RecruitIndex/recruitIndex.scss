@@ -1,0 +1,53 @@
+#recruit-index-area {
+  padding: 100px;
+  position: relative;
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .float-text {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    color: #ccc;
+    font-size: 80px;
+    z-index: -10;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    transform: translate(-50%, 200%) rotate(90deg);
+    text-shadow: 19px -17px 0px #415deb;
+  }
+  .grid-wrapper {
+    display: flex;
+    justify-content: center;
+    .recruit-items {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      list-style: none;
+      .recruit-item {
+        min-height: 124px;
+        padding: 30px;
+        background-color: white;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+        border-top: solid 3px #415deb;
+        position: relative;
+        margin: 10px 10px;
+        color: #333;
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 12px;
+        }
+        .item-float-icon {
+          position: absolute;
+          bottom: 15px;
+          right: 15px;
+          color: #333;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
